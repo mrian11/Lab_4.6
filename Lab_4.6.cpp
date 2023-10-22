@@ -1,5 +1,6 @@
 #include <iostream> 
-#include <cmath> 
+#include <cmath>
+// #include<iomanip>
 using namespace std;
 int main() {
 	double P, S;
@@ -31,7 +32,7 @@ int main() {
 		k = 1;
 		do
 		{
-			S *= k * k + 1;
+			S *= (k * k + 1);
 			k++;
 		} while (k <= i);
 		P += S / (1 + S * S);
